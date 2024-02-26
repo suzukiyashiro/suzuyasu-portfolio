@@ -1,0 +1,28 @@
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 列の最小幅を250pxに設定し、利用可能な空間を均等に分割 */
+  gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#skills li {
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 画面幅が600px以上のデバイス向けのスタイル */
+@media (min-width: 600px) {
+  #skills ul {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr); /* 2列に */
+  }
+  #skills li {
+    justify-content: center;
+  }
+}

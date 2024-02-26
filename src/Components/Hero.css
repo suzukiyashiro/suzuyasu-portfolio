@@ -1,0 +1,93 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  flex: 1.2;
+}
+
+.hero-desc {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 80%;
+  margin-top: 24px;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.hero-desc h3 {
+  max-width: 100%;
+  /* 親要素の幅を超えない */
+  word-wrap: break-word;
+  /* 長い単語があっても折り返し */
+}
+
+
+.hero-link {
+  border-bottom: 2px solid black;
+}
+
+.hero-link:hover {
+  color: gray;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .hero-desc h3{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .hero-desc h3{
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-desc h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero-desc h3 {
+    font-size: 14px;
+    max-width: 100%;
+    /* 親要素の幅を超えない */
+    word-wrap: break-word;
+    /* 長い単語があっても折り返し */
+    margin: 0 auto;
+    /* 中央揃え */
+    padding: 0 15px;
+    /* 左右に少し余白を持たせる */
+  }
+
+}

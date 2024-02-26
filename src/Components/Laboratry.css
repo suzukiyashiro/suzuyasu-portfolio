@@ -1,0 +1,7 @@
+.lab-link {
+    border-bottom: 2px solid black;
+}
+
+.lab-link:hover {
+    color: gray;
+}

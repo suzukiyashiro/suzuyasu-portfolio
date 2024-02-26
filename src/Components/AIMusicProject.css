@@ -1,0 +1,29 @@
+.generated-midi-result h4 {
+    margin-bottom: 10px;
+}
+
+.generated-midi {
+    margin-bottom: 36px;
+}
+  
+.generated-items {
+display: flex; /* Flex containerを有効にする */
+justify-content: space-between; /* アイテム間にスペースを追加 */
+align-items: center; /* アイテムを垂直方向に中央に揃える */
+padding: 0px; /* 内側の余白 */
+}
+
+.generated-item {
+flex: 1; /* 各要素が等しい幅を取るようにする */
+margin: 0 10px; /* 左右のアイテム間に余白を追加 */
+}
+
+.audio-label {
+text-align: center; /* ラベルを中央に揃える */
+margin-bottom: 5px; /* ラベルとオーディオプレイヤーとの間に余白を追加 */
+}
+
+audio {
+width: 100%; /* audio要素の幅をコンテナに合わせる */
+margin-bottom: 20px; /* audio要素の下に余白を追加 */
+}

@@ -1,0 +1,143 @@
+/* AIProject.css */
+
+.netkeiba {
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 1px solid #000;
+}
+
+.netkeiba:hover{
+  color: #555;
+}
+
+.scraping {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.race-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-auto-rows: auto;
+  gap: 1.5rem;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.race-results > div {
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+}
+
+.race-results li {
+  list-style: none;
+}
+
+.race {
+  border-radius: 16px;
+  border: #555 1px solid;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  padding: 0.7rem;
+  background-color: #F0F0F0; 
+}
+
+.race h4 {
+  grid-row: 1;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.race-model {
+  grid-row: 1;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.results {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+}
+
+.results-title {
+  font-size: 16px;
+}
+
+.prediction, .actual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prediction h5, .actual h5 {
+  margin-bottom: 0.5rem;
+}
+
+.correct-horse {
+  font-weight: bold;
+  color: blue;
+}
+
+.binary-correct-horse {
+  font-weight: bold;
+  color: red; /* 馬名が正しい場合に赤色を適用 */
+}
+
+
+.correct-order {
+  color: red;
+}
+
+.place {
+  color: black;
+}
+
+.results-title, .place {
+  font-size: 16px; 
+  margin: 0;
+}
+
+.prediction, .actual {
+  margin-left: 0;
+}
+
+.race-results ul {
+  padding-left: 0;
+}
+
+.results li {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .results-title, .place, .results li {
+      font-size: 12px; 
+      margin: 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1099px) {
+  .race-results {
+      font-size: 12px;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .race-results li, .place {
+      font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .race-results {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}

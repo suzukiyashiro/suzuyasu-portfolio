@@ -1,0 +1,12 @@
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #aaa;
+  }
+
+.updateAt {
+    font-size: 15px;
+    margin-left: 12px;
+}

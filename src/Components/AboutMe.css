@@ -1,0 +1,33 @@
+/* About Me */
+#about-me ul {
+    padding-left: 0; /* Reset padding */
+}
+  
+  
+#about-me li{
+    width: 80%;
+    max-width: 800px;
+    padding: 16px;
+    margin: 20px auto;
+    list-style: none;
+    border: #aaa 3px solid;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; /* add this line */
+}
+
+
+
+#about-me h3 {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #about-me {
+        font-size: 90%;
+    }
+}

@@ -1,0 +1,72 @@
+/* Works.css */
+#works {
+    text-align: center;
+  }
+  
+  #works h2 {
+    padding: 10px 0;
+    margin: 0;
+  }
+  #works h4 {
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+
+
+
+  #works a {
+    margin: 12px 48px;
+    padding: 0;
+  }
+
+  
+  #works ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #works ul li {
+    margin: 15px 0; /* この値は適宜調整してください */
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: rgb(223, 221, 218);
+    padding: 20px 24px;
+  }
+  
+  
+  #works ul li img {
+    object-fit: cover;
+    height: 300px; /* 画像のサイズを調整してください */
+    width: 300px;
+    border: 1px solid black;
+    transition: all .3s;
+  }
+
+  #works ul li:hover {
+    opacity: .7;
+    border: 1px solid red;
+  }
+  
+  #works ul li p {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .workDesc {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    #works ul li img {
+      height: 250px; /* 画像のサイズを調整してください */
+      width: 250px;
+    }
+    #works ul li p {
+      text-align: center;
+    }
+  }
